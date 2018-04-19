@@ -85,52 +85,32 @@ if (flavor ===  ("vanilla" || "chocolate") || vessel === ("cone" || "bowl")  || 
   console.log("No Ice cream");
 }
 
+/*
+
+Programming Quiz: What do I Wear? (3-7)
+*/
 
 // change the values of `shirtWidth`, `shirtLength`, and `shirtSleeve` to test your code
-//currently not finished yet!
-var shirtWidth = 19;
-var shirtLength = 28;
-var shirtSleeve = 8.39;
+var shirtWidth = 23;
+var shirtLength = 30;
+var shirtSleeve = 8.71;
 
 // your code goes here
-if ((shirtWidth >= 18 || shirtWidth < 20) &&  shirtLength === 28  && shirtSleeve <= 8.38   ) {
-  console.log("small (S)");
-} else if (shirtWidth <  20 && shirtLength === 29  && shirtSleeve < 8.38 ) {
-  console.log("medium (M)");
-} else if (shirtWidth <  22 && shirtLength === 30  && shirtSleeve < 8.63 ) {
-  console.log("large (L)");
-} else if (shirtWidth <  24 && shirtLength === 31  && shirtSleeve < 8.88 ) {
-  console.log("extra large (XL)");
-   } else if (shirtWidth <  26 && shirtLength === 33  && shirtSleeve < 9.63   ) {
-  console.log("extra extra large (2XL)");
-  } else if (shirtWidth <  28    && shirtLength === 34  && shirtSleeve < 10.13 ) {
-  console.log("extra extra extra large (3XL)");
-  }  else {
-  console.log("N/A");
+if ((shirtWidth >= 18 && shirtWidth < 20) && (shirtLength >= 28 && shirtLength < 29) && (shirtSleeve >= 8.13 && shirtSleeve < 8.38)) {
+    console.log("S");
+} else if ((shirtWidth >= 20 && shirtWidth < 22) && (shirtLength >= 29 && shirtLength < 30) && (shirtSleeve >= 8.38 && shirtSleeve < 8.63)) {
+    console.log("M");
+} else if ((shirtWidth >= 22 && shirtWidth < 24) && (shirtLength >= 30 && shirtLength < 31) && (shirtSleeve >= 8.63 && shirtSleeve < 8.88)) {
+    console.log("L");
+} else if ((shirtWidth >= 24 && shirtWidth < 26) && (shirtLength >= 31 && shirtLength < 33) && (shirtSleeve >= 8.88 && shirtSleeve < 9.63)) {
+    console.log("XL");
+} else if ((shirtWidth >= 26 && shirtWidth < 28) && (shirtLength >= 33 && shirtLength < 34) && (shirtSleeve >= 9.63 && shirtSleeve < 10.13)) {
+    console.log("2XL");
+} else if (shirtWidth >= 28  && shirtLength >= 34 && shirtSleeve >= 10.13) {
+    console.log("3XL");
+} else {
+    console.log("N/A");
 }
-
-// or
-var shirtWidth = 19;
-var shirtLength = 28;
-var shirtSleeve = 8.39;
-
-// your code goes here
-if ((shirtWidth >= 18 || shirtWidth < 20) &&  shirtLength === 28  && shirtSleeve <= 8.38   ) {
-  console.log("small (S)");
-} else if ((shirtWidth >= 20 || shirtWidth < 22) && shirtLength === 29  && shirtSleeve < 8.63 ) {
-  console.log("medium (M)");
-} else if ((shirtWidth >= 22 || shirtWidth < 24) && shirtLength === 30  && shirtSleeve < 8.88 ) {
-  console.log("large (L)");
-} else if ((shirtWidth >= 24 || shirtWidth < 26) && shirtLength === 31  && shirtSleeve < 9.63 ) {
-  console.log("extra large (XL)");
-   } else if ((shirtWidth >= 26 || shirtWidth < 28) && shirtLength === 33  && shirtSleeve < 10.13   ) {
-  console.log("extra extra large (2XL)");
-  } else if ((shirtWidth >= 28 || shirtWidth < 30)   && shirtLength === 34  && shirtSleeve === 10.13 ) {
-  console.log("extra extra extra large (3XL)");
-  }  else {
-  console.log("N/A");
-}
-
 
 //A value is falsy if it converts to false when evaluated in a boolean context. 
 //For example, an empty String "" is falsy because, "" evaluates to false
