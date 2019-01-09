@@ -4,7 +4,7 @@
 // Here’s a description of the different logical operators:
 // &&  Logical AND value1 && value2  Returns true if both value1 and value2 evaluate to true.
 // ||  Logical OR  value1 || value2  Returns true if either value1 or value2 (or even both!) evaluates to true.
-// ! Logical NOT !value1 Returns the opposite of value1. If value1 is true, then !value1 is false.
+// ! Logical NOT !value1 Returns the opposite of value1. If value1 is true, then !value1 is false.So adding it to the start of a value reverses it.
 
 
 !(4 === 4) && "STRing" === "STRing"
